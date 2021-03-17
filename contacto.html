@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primera web</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="imagenes/logo.png">
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Formulario de contacto</h1>
+
+      <div class="form-container">
+        <form action="" method="POST">
+          <table>
+            <tr>
+              <td>
+                <label for="nombre_completo">Nombre y Apellido</label>
+                <input type="text" name="nombre_completo" id="nombre_completo">
+              </td>
+              <td>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="18">
+              </td>
+              <td>
+                <label for="pais">País</label>
+                <select name="pais" id="pais">
+                  <option value="">-- Elegir --</option>
+                  <option value="arg">Argentina</option>
+                  <option value="esp">España</option>
+                  <option value="jpn">Japón</option>
+                  <option value="rus">Rusia</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="intereses">Intereses</label>
+
+                <div id="intereses" class="options">
+                  <input type="checkbox" value="html" name="intereses"> <small>HTML</small>
+                  <input type="checkbox" value="css" name="intereses"> <small>CSS</small>
+                  <input type="checkbox" value="js" name="intereses"> <small>Javascript</small>
+                </div>
+              </td>
+              <td>
+                <label for="sexo">Sexo</label>
+
+                <div id="sexo" class="options">
+                  <input type="radio" name="sexo" value="f"> <small>Femenino</small>
+                  <input type="radio" name="sexo" value="m"> <small>Masculino</small>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="submit" id="btn_enviar" value="Enviar">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+
+    <aside>
+      <h3>Links de interés</h3>
+
+      <nav>
+        <ul>
+          <li><a href="">Versión simple</a></li>
+          <li><a href="">Versión estructurada</a></li>
+          <li><a href="">Versión semántica</a></li>
+          <li><a href="">http://facebook.com</a></li>
+          <li><a href="">http://instagram.com</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 20xx - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
