@@ -12,8 +12,9 @@
 # Contacto
 
 - [cesarmansilla.com.ar](https://cesarmansilla.com.ar)
-- @cemansilla en Twitter
-- @cedamansilla en Instagram
+- [@cesarmansilla](https://www.linkedin.com/in/cesarmansilla) en LinkedIn
+- [@cemansilla](https://twitter.com/cemansilla) en Twitter
+- [@cedamansilla](https://www.instagram.com/cedamansilla) en Instagram
 
 ## 💰 Donaciones
 
