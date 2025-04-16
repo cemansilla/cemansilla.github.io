@@ -9,7 +9,6 @@ const modalContent = document.getElementById('modal-content');
 const closeModal = document.querySelector('.close-modal');
 const viewProjectBtns = document.querySelectorAll('.view-project');
 const skillBars = document.querySelectorAll('.skill-progress');
-const contactForm = document.getElementById('contactForm');
 
 function initPortfolio() {
     const sortedProjects = [...projectsData].sort((a, b) => {
@@ -406,33 +405,6 @@ function initGallery() {
             showSlide(newIndex);
         });
     }
-}
-
-if (contactForm) {
-    contactForm.addEventListener('submit', e => {
-        e.preventDefault();
-
-        const formElements = contactForm.elements;
-        let formValid = true;
-        
-        for (let i = 0; i < formElements.length; i++) {
-            if (formElements[i].hasAttribute('required') && !formElements[i].value) {
-                formElements[i].classList.add('error');
-                formValid = false;
-            } else {
-                formElements[i].classList.remove('error');
-            }
-        }
-        
-        if (formValid) {
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.innerHTML = '<p>Thank you for your message! I will get back to you soon.</p>';
-            
-            contactForm.innerHTML = '';
-            contactForm.appendChild(successMessage);
-        }
-    });
 }
 
 function isInViewport(element) {

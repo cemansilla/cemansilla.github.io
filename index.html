@@ -14,6 +14,16 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cesarmansilla.com.ar/images/open-graph.png">
     <meta property="og:url" content="https://cesarmansilla.com.ar">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LVHKZ2QX6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2LVHKZ2QX6');
+    </script>
 </head>
 <body>
     <header id="header">
@@ -46,7 +56,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Software Engineer /<br>Tech Lead</h1>
+                    <h1>Software Engineer ·<br>Tech Lead ·</h1>
                     <p>Desarrollo web · Ecomerce · Fintech · Mentoría</p>
                     <a href="#contact" class="btn primary-btn">HABLEMOS!</a>
                 </div>
@@ -244,19 +254,21 @@
             
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-item-content">
-                            <h3>LOCATION</h3>
-                            <p>Buenos Aires, Argentina</p>
+                    <div class="contact-group">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <h3>UBICACIÓN</h3>
+                                <p>Buenos Aires, Argentina</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-item-content">
-                            <h3>EMAIL</h3>
-                            <p>contact@cesarmansilla.com.ar</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <h3>EMAIL</h3>
+                                <p>contacto@cesarmansilla.com.ar</p>
+                            </div>
                         </div>
                     </div>
                     
@@ -268,7 +280,7 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contact-form" action="https://formspree.io/f/mqapozny" method="POST">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
                         </div>
@@ -285,7 +297,9 @@
                             <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn primary-btn">ENVIAR</button>
+                        <button id="contact-form-submit" class="btn primary-btn">ENVIAR</button>
+
+                        <p id="contact-form-status" class="status-message"></p>
                     </form>
                 </div>
             </div>
@@ -309,5 +323,6 @@
     <script src="js/data/portfolio-data.js"></script>
     <script src="js/data/project-details.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html> 
