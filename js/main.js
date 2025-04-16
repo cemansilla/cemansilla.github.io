@@ -12,6 +12,9 @@ const skillBars = document.querySelectorAll('.skill-progress');
 
 function initPortfolio() {
     const sortedProjects = [...projectsData].sort((a, b) => {
+        if (a.has_modal && !b.has_modal) return -1;
+        if (!a.has_modal && b.has_modal) return 1;
+
         return new Date(b.year) - new Date(a.year);
     });
     
@@ -141,7 +144,13 @@ function updateLoadMoreButton(totalItems, currentlyShowing) {
             const activeFilter = document.querySelector('.portfolio-filter button.active');
             const filterValue = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
             
-            let filteredProjects = [...projectsData].sort((a, b) => new Date(b.year) - new Date(a.year));
+            let filteredProjects = [...projectsData].sort((a, b) => {
+                // First prioritize by has_modal (true comes first)
+                if (a.has_modal && !b.has_modal) return -1;
+                if (!a.has_modal && b.has_modal) return 1;
+                // Then sort by date
+                return new Date(b.year) - new Date(a.year);
+            });
             if (filterValue !== 'all') {
                 filteredProjects = filteredProjects.filter(p => p.category === filterValue);
             }
@@ -173,7 +182,7 @@ function bindPortfolioEvents() {
                         window.openProjectModal(project);
                     }
                 } else if (project.link) {
-                    window.open(project.link, '_blank');
+                    window.open(project.link, '_blank', 'noopener,noreferrer');
                 }
             }
         });
@@ -256,7 +265,13 @@ window.addEventListener('DOMContentLoaded', function() {
             
             const filterValue = this.getAttribute('data-filter');
             
-            let filteredProjects = [...projectsData].sort((a, b) => new Date(b.year) - new Date(a.year));
+            let filteredProjects = [...projectsData].sort((a, b) => {
+                // First prioritize by has_modal (true comes first)
+                if (a.has_modal && !b.has_modal) return -1;
+                if (!a.has_modal && b.has_modal) return 1;
+                // Then sort by date
+                return new Date(b.year) - new Date(a.year);
+            });
             
             if (filterValue !== 'all') {
                 filteredProjects = filteredProjects.filter(item => item.category === filterValue);
@@ -356,7 +371,7 @@ window.addEventListener('DOMContentLoaded', function() {
                         <p>${projectDetails.development}</p>
                     </div>
                     
-                    ${projectDetails.link ? `<a href="${projectDetails.link}" target="_blank" class="btn primary-btn">VER SITIO <i class="fa fa-external-link" aria-hidden="true"></i></a>` : ''}
+                    ${projectDetails.link ? `<a href="${projectDetails.link}" target="_blank"  rel="noreferrer nofollow" class="btn primary-btn">VER SITIO <i class="fa fa-external-link" aria-hidden="true"></i></a>` : ''}
                 </div>
             `;
             
