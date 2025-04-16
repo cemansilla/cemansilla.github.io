@@ -20,7 +20,7 @@ const projectsData = [
     "client": "Valus",
     "description": "Mantenimiento y optimización del desarrollo hecho en Woocommerce.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/valus-ecommerce.jpg",
+    "thumbnail": "images/portfolio/valus-ecommerce-grid.jpg",
     "has_modal": false,
     "link": "https://valus.com.ar"
   },
@@ -32,7 +32,7 @@ const projectsData = [
     "client": "Varo Varo",
     "description": "Desarrollo de ecommerce sobre Woocommerce.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/varovaro-ecommerce.jpg",
+    "thumbnail": "images/portfolio/varovaro-ecommerce-grid.jpg",
     "has_modal": false,
     "link": "https://varovaro.com.ar"
   },
@@ -44,7 +44,7 @@ const projectsData = [
     "client": "Kassel Pharma",
     "description": "Desarrollo de ecommerce sobre Woocommerce.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/kasselpharma-ecommerce.jpg",
+    "thumbnail": "images/portfolio/kasselpharma-ecommerce-grid.jpg",
     "has_modal": false,
     "link": "https://www.kasselpharma.com/"
   },
@@ -56,7 +56,7 @@ const projectsData = [
     "client": "Plusrite MX",
     "description": "Desarrollo de ecommerce sobre Woocommerce.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/plusrite-ecommerce.jpg",
+    "thumbnail": "images/portfolio/placeholder-grid.jpg",
     "has_modal": false,
     "link": "https://plusrite.mx/"
   },
@@ -68,7 +68,7 @@ const projectsData = [
     "client": "Balbico",
     "description": "Desarrollo de ecommerce en CI.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/balbico-ecommerce.jpg",
+    "thumbnail": "images/portfolio/balbico-ecommerce-grid.jpg",
     "has_modal": false,
     "link": "http://www.balbico.com.ar/"
   },
@@ -80,7 +80,7 @@ const projectsData = [
     "client": "LG",
     "description": "Catálogo de productos de LG para latinoamérica.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/lg-catalogo.jpg",
+    "thumbnail": "images/portfolio/placeholder-grid.jpg",
     "has_modal": false
   },
   {
@@ -153,7 +153,7 @@ const projectsData = [
     "client": "Zanella",
     "description": "Reestructuración de Sitio institucional.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/zanella-website.jpg",
+    "thumbnail": "images/portfolio/zanella-institucional-grid.jpg",
     "has_modal": false,
     "link": "https://zanella.com.ar/"
   },
@@ -165,7 +165,7 @@ const projectsData = [
     "client": "Barsat",
     "description": "Sitio institucional.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/barsat-website.jpg",
+    "thumbnail": "images/portfolio/barsat-website-grid.jpg",
     "has_modal": false,
     "link": "http://www.barsat.com.ar/"
   },
@@ -177,7 +177,7 @@ const projectsData = [
     "client": "Let It Beat",
     "description": "Sitio institucional.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/letitbeat-website.jpg",
+    "thumbnail": "images/portfolio/letitbeat-website-grid.jpg",
     "has_modal": false,
     "link": "https://www.letitbeat.us/"
   },
@@ -189,40 +189,40 @@ const projectsData = [
     "client": "Mattel",
     "description": "Catálogo de productos para lanzamiento de productos escolares en diversos países.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/mattel-regreso-clases.jpg",
+    "thumbnail": "images/portfolio/placeholder-grid.jpg",
     "has_modal": false
   },
   {
     "id": 17,
-    "title": "Megustadores",
+    "title": "Havanna | Landing Megustadores",
     "category": "others",
     "year": "2016-11",
     "client": "Havanna",
     "description": "Hotsite con concurso donde los usuarios debían demostrar cuanto saben de la marca.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/havanna-megustadores.jpg",
+    "thumbnail": "images/portfolio/placeholder-grid.jpg",
     "has_modal": false
   },
   {
     "id": 18,
-    "title": "Corona Sunsets",
+    "title": "Corona | Landing Sunsets",
     "category": "others",
     "year": "2016-12",
     "client": "Corona",
     "description": "Hotsite del festival Corona Sunsets en Panamá.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/corona-sunsets.jpg",
+    "thumbnail": "images/portfolio/placeholder-grid.jpg",
     "has_modal": false
   },
   {
     "id": 19,
-    "title": "Cucharita ideal",
+    "title": "Havanna | Cucharita ideal",
     "category": "others",
     "year": "2016-09",
     "client": "Havanna",
     "description": "Hotsite para crear la cucharita ideal para comer dulce de leche.",
     "services": "Desarrollo",
-    "thumbnail": "images/portfolio/havanna-cucharita.jpg",
+    "thumbnail": "images/portfolio/placeholder-grid.jpg",
     "has_modal": false
   }
 ]; 
