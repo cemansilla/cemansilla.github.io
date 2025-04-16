@@ -1035,40 +1035,65 @@ img {
 .contact-info {
     text-align: left;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .contact-item {
-    margin-bottom: 30px;
     display: flex;
     align-items: flex-start;
-    flex: 0 0 48%;
 }
 
 .contact-item i {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin-right: 15px;
-    margin-top: 5px;
     width: 20px;
+    margin-top: 2px;
 }
 
 .contact-item-content {
     flex: 1;
 }
 
-.contact-item h3 {
+.contact-item-content h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    line-height: 1.1;
+}
+
+.contact-item-content p {
+    white-space: nowrap;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.status-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.status-message.success {
+    color: #28a745;
+}
+
+.status-message.error {
+    color: #dc3545;
 }
 
 .social-links {
     display: flex;
     gap: 15px;
-    margin-top: 30px;
-    justify-content: center;
-    flex: 0 0 100%;
+    justify-content: flex-start;
+    margin-top: 15px;
 }
 
 .social-links a {
@@ -1119,6 +1144,49 @@ img {
 .form-group textarea {
     min-height: 150px;
     resize: vertical;
+}
+
+#contact-form-status {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-item {
+        flex: 0 0 48%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-item i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-group {
+        flex-direction: column;
+    }
+    
+    .contact-item {
+        flex: 0 0 100%;
+    }
 }
 
 /* 
@@ -1248,17 +1316,14 @@ img {
         grid-template-columns: 1fr;
     }
     
-    .contact-info {
-        text-align: center;
-        display: flex;
+    .contact-group {
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     
     .contact-item {
         flex: 0 0 48%;
-        margin-bottom: 20px;
-        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -1266,14 +1331,11 @@ img {
     
     .contact-item i {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     
     .social-links {
         justify-content: center;
-        margin-left: 0;
-        margin-top: 20px;
-        flex: 0 0 100%;
     }
 }
 
@@ -1374,6 +1436,18 @@ img {
     
     .portfolio-grid {
         min-height: 1800px; /* Further adjust for smaller screens */
+    }
+    
+    .contact-group {
+        flex-direction: column;
+    }
+    
+    .contact-item {
+        flex: 0 0 100%;
+    }
+    
+    .social-links {
+        margin-top: 5px;
     }
 }
 
@@ -1627,4 +1701,7 @@ section .section-heading::after,
 .image-placeholder {
     background-color: #e0e0e0;
     color: #555;
-} 
+}
+
+/* Los estilos duplicados con !important fueron consolidados
+   en la sección "Contact Section Styles" arriba */ 
